@@ -21,13 +21,19 @@ Given in input the country code relating to the nation and the postal code to be
 returned the validity of the zip code for that country.
 
 country_code:  nation code id (Codice ISO 3166 alpha2)
+
 cap: postal code
 
 return StatusCAP object (Enum)
 
 example:
+
 from postal_code.utils import verify_cap
+
 country = 'IT'
+
 cap = '95000'
+
 result = verify_cap(country, cap)
+
 
