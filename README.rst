@@ -13,3 +13,15 @@ Quick start
         ...
         'postal_code',
     ]
+
+
+use the function verify_cap
+
+Given in input the country code relating to the nation and the postal code to be verified,
+returned the validity of the zip code for that country.
+
+country_code:  nation code id
+cap: postal code
+
+return StatusCAP object (Enum)
+
