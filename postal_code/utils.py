@@ -19,10 +19,8 @@ def verify_cap(country_code, cap, alpha2=True):
     try:
         enum_class = CapRegexApha2 if alpha2 else CapRegexApha3
         for row in enum_class:
-            if row.name == country_code and re.match(row.value[1], cap):
-                return StatusCAP.VALID
-            else:
-                return StatusCAP.NOT_VALID
+            if row.name == country_code:
+                return StatusCAP.VALID if re.match(row.value[1], cap) else StatusCAP.NOT_VALID
         return StatusCAP.NOT_FOUND
     except:
         return StatusCAP.EXCEPTION
