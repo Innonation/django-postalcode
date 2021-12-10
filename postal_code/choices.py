@@ -4,6 +4,7 @@ from enum import Enum
 class CapRegexApha2(Enum):
     IT = ("Italia", "^[0-9]{5}$")
     DZ = ("Algeria", "^[0-9]{5}$")
+    AL = ("Albania", "[0-9]{4}$")
     BA = ("Bosnia-Erzegovina", "^[0-9]{5}$")
     BR = ("Brasile", "^[0-9]{5}$")
     CR = ("Costa Rica", "^[0-9]{5}$", "^[0-9]{5}-[0-9]{4}$")
@@ -204,6 +205,7 @@ class CapRegexApha2(Enum):
 class CapRegexApha3(Enum):
     ITA = ("Italia", "^[0-9]{5}$")
     DZA = ("Algeria", "^[0-9]{5}$")
+    ALB = ("Albania", "[0-9]{4}$")
     BIH = ("Bosnia-Erzegovina", "^[0-9]{5}$")
     BRA = ("Brasile", "^[0-9]{5}$")
     CRI = ("CostaRica", "^[0-9]{5}$", "^[0-9]{5}-[0-9]{4}$")
